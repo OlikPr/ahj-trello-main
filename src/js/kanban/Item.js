@@ -54,7 +54,7 @@ export default class Item {
   }
 
   removeItem() {
-    this.item.parentNode.remove(this.item);
+    this.item.parentNode.removeChild(this.item);
     const columsLocal = JSON.parse(localStorage.columns);
     const key = this.container.closest('.main-kanban-column').dataset.id;
     const index = columsLocal[key].findIndex((item) => item.id === +this.item.dataset.id);

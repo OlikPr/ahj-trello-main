@@ -44,14 +44,14 @@ export default function drag(main, el) {
 
   function resetState() {
     if (placeholder && placeholder.parentNode) {
-      placeholder.parentNode.remove(placeholder);
+      placeholder.parentNode.removeChild(placeholder);
     }
     if (draggedEl) {
       draggedEl.style.position = '';
       draggedEl.style.left = '';
       draggedEl.style.top = '';
       draggedEl.style.zIndex = '';
-      draggedEl.classList.remove('dragged');
+      draggedEl.classList.removeChild('dragged');
     }
     draggedEl = null;
     placeholder = null;
