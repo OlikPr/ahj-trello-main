@@ -51,7 +51,7 @@ export default function drag(main, el) {
       draggedEl.style.left = '';
       draggedEl.style.top = '';
       draggedEl.style.zIndex = '';
-      draggedEl.classList.removeChild('dragged');
+      draggedEl.classList.remove('dragged');
     }
     draggedEl = null;
     placeholder = null;
