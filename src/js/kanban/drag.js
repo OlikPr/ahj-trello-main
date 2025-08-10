@@ -44,7 +44,7 @@ export default function drag(main, el) {
 
   function resetState() {
     if (placeholder && placeholder.parentNode) {
-      placeholder.parentNode.removeChild(placeholder);
+      placeholder.remove();
     }
     if (draggedEl) {
       draggedEl.style.position = '';
