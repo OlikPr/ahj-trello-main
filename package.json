@@ -14,8 +14,8 @@
     "preshow:dist": "yarn run build",
     "show:dist": "live-server dist"
   },
-  "repository": "git@github.com:Olikpr/ahj-trello-main.git",
-  "author": "Evgeniy Pryanichnikov",
+  "repository": "git@github.com:OlikPr/ahj-trello-main.git",
+  "author": "OlikPr",
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.21.0",
