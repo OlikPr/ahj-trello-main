@@ -51,7 +51,7 @@ export default class ItemsForm {
   }
 
   closeForm() {
-    this.form.remove();
+    this.form.parentNode.removeChild(this.form);
   }
 
   onSubmit(e) {

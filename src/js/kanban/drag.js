@@ -38,13 +38,13 @@ export default function drag(main, el) {
     if (position.position === 'before') {
       position.element.parentNode.insertBefore(placeholder, position.element);
     } else {
-      position.element.appendChild(placeholder);
+      position.element.append(placeholder);
     }
   }
 
   function resetState() {
     if (placeholder && placeholder.parentNode) {
-      placeholder.remove();
+      placeholder.parentNode.removeChild(placeholder);
     }
     if (draggedEl) {
       draggedEl.style.position = '';
@@ -74,7 +74,7 @@ export default function drag(main, el) {
     draggedEl.style.position = 'absolute';
     draggedEl.style.zIndex = '1000';
     draggedEl.classList.add('dragged');
-    document.body.appendChild(draggedEl);
+    document.body.append(draggedEl);
     moveAt(e);
 
     function moveAt(e) {
@@ -107,7 +107,7 @@ export default function drag(main, el) {
         if (position.position === 'before') {
           columnItems.insertBefore(draggedEl, position.element);
         } else {
-          columnItems.appendChild(draggedEl);
+          columnItems.append(draggedEl);
         }
 
         // Обновляем localStorage только если колонка изменилась
