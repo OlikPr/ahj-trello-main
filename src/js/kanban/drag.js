@@ -60,7 +60,7 @@ export default function drag(main, el) {
   el.addEventListener('mousedown', (e) => {
     if (e.target.dataset.toggle === 'item-remove') return;
     e.preventDefault();
-
+    document.body.style.cursor = 'grabbing'
     draggedEl = e.currentTarget;
     currentColumn = draggedEl.closest('.main-kanban-column');
     shiftX = e.clientX - draggedEl.getBoundingClientRect().left;

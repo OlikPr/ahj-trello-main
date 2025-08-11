@@ -336,7 +336,7 @@
   pointer-events: none;
   background: #fff;
   border:1px solid rgb(53, 62, 145);
-  cursor: grabbing;
+  cursor: grabbing !important;
 }
 
 .main-kanban-item:active {
