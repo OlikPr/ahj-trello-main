@@ -3,7 +3,7 @@
 
 deployment: https://olikpr.github.io/ahj-trello-main/
 #### Легенда
-
+..
 Вы делаете внутрикорпоративную систему управления задачами, и вашему руководству очень нравится подход, который используется в [Trello](https://trello.com):
 
 ![](./src/img/trello.png)
